@@ -1,0 +1,65 @@
+body{
+	font-family: Times new roman;
+	margin: 0;
+	padding: 0;
+}
+#elementary{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-color: #ED9121;
+}
+nav{
+	background-color: #F4A460;
+}
+#logo{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+#name_website_horse{
+	font-family: Times new roman;
+	font-size: 50px;
+}
+#elementary{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: auto;
+	align-content:flex-start;
+}
+#elementary li{
+	list-style-type: none;
+}
+#spreadsheet td, #spreadsheet th{
+	text-align: center;
+}
+#spreadsheet .oddnum{
+	background-color: #F8D568;
+}
+#spreadsheet .evennum{
+	background-color: #F4A460;
+}
+#questionnaire{
+	order: 0;
+}
+#spreadsheet{
+	order: 1;
+}
+footer{
+	background-color: #ED9121;
+	text-align: center;
+}
+@media screen and (min-width: 800px){
+	#elementary{
+		flex-direction: row;
+		justify-content: center;
+	}
+	#questionnaire{
+		order: 0;
+	}
+	#spreadsheet{
+		order: 0;
+	}
+}

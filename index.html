@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <title>Задание 4</title>
+	</head>
+    <body>
+		<header>
+				<div class="container-fluid">
+				<div class="container">
+				<div class="row">
+				<div class="img-responsive col-xs-1">
+					<img style="float:left" src="https://pbs.twimg.com/media/EY4JBu5U0AAFviE.jpg" height="100" alt="Лого" />
+				</div>
+				<div class="col-xs-3">
+				<div id="name_website_horse">300 Лошадей</div>
+				</div></div></div></div>
+		</header>
+		<div class="container mt-2">
+		<nav class="navbar navbar-inverse navbar-expand-sm">
+			<ul id="elementary" сlass="navbar-nav">
+				<li class="nav-item"><a href="#giperlinks" class="nav-link">Гиперссылки</a></li>
+				<li class="nav-item"><a href="#spreadsheet" class="nav-link">Таблица</a></li>
+				<li class="nav-item"><a href="#questionnaire" class="nav-link">Форма</a></li>
+				<li class="nav-item"><a href="#basement" class="nav-link">Подвал</a><li>
+			</ul></nav></div>
+		<div class="container">
+		<main style="display: flex; flex-direction: column;">
+		<div id="giperlinks">
+        <ol>
+            <li><a href="http://example.com">абсолютная гиперссылка на главную страницу;</a></li>
+            <li><a href="https://example.com">абсолютная в прооколе https;</a></li>
+            <li><a href="ftp://example.com/word.txt">на файл на сервере FTP без авторизации;</a></li>
+            <li><a href="ftp://user:danil@kubsu.ru/text.txt">на файл на сервере FTP с авторизации;</a></li>
+            <li><a href="https://www.universe.com/solarsystem#planets">на фрагмент страницы некоторого сайта;</a></li>
+            <li><a href="https://example.com/relatives#mother">на фрагмент текущей страницы;</a></li>
+            <li><a href="http://example.com?relatives=20&brothers=3">с двумя параметрами в URL;</a></li>
+            <li>
+                <ul>
+                    <li><a href="http://family.ru"title="Всё о кровном родстве">Всё о семье;</a></li>
+                    <li><a href="http://family.ru/kids"title="Дети">Дети;</a></li>
+                </ul>
+            </li>
+            <li><a>ссылка без href;</a></li>
+            <li><a href>ссылка с пустым href;</a></li>
+            <li><a href="http://example.com" rel="nofollow">запрещен переход поисковикам;</a></li>
+            <li><a href="http://example.com" rel="noindex">запрещен для индексации поисковиками;</a></li>
+            <li><p><a href="http://exmaple.com">контекстная в тексте абзаца</a></p></li>
+            <li><a href="https://vsezhivoe.ru/yaguar/"><img src="https://vsezhivoe.ru/wp-content/uploads/2020/12/%D1%8F%D0%B3%D1%83%D0%B0%D1%80-%D1%84%D0%BE%D1%82%D0%BE.jpg" height="100" alt="Picture"></a></li>
+            <li><img src="https://vsezhivoe.ru/wp-content/uploads/2017/09/20.jpg" alt="wolf" width="300" height="300" usemap="#wolf"></li>
+				<map name="wolf">
+					<area shape="circle" coords="150,150,50" href="https://i.ytimg.com/vi/4XbHCcF_ELM/maxresdefault.jpg" alt="nose" target="_blank">
+					<area shape="rect" coords="40,90,130,190" href="https://www.livingwithwolves.org/wp-content/uploads/2014/05/119.wsA18_9_10.jpg" alt="tail" target="_blank">
+				</map>
+            <li><a href="index.html">относительная ссылка в текущем каталоге;</a></li>
+            <li><a href="about/project.html">относительная ссылка в каталоге about;</a></li>
+            <li><a href="../project.html">относительная ссылка в каталоге уровнем выше; </a></li>
+            <li><a href="../../project.html">относительная ссылка в каталоге двумя уровнями выше;</a></li>
+            <li><a href="/home">сокращенная ссылка на главную;</a></li>
+            <li><a href="/about">сокращенная ссылка на внутреннюю;</a></li>
+        </ol></div>
+		<table class="table table-bordered" id="spreadsheet">
+			<tbody>
+				<tr>
+				<th class="oddnum" scope="col" >№</th>
+				<th class="oddnum" scope="col">Владелец машины</th>
+				<th class="oddnum" scope="col">Марка машины</th>
+				<th class="oddnum" scope="col">Мощность л/с</th>
+			</tr>
+			<tr>
+				<td class="evennum" scope="row">1</td>
+				<td class="evennum">Данил</td>
+				<td class="evennum">Ford</td>
+				<td class="evennum">300</td>
+			</tr>
+			<tr>
+				<td class="oddnum" scope="row">2</td>
+				<td class="oddnum">Никита</td>
+				<td class="oddnum">Datsun</td>
+				<td class="oddnum">102</td>
+			</tr>
+			<tr>
+				<td class="evennum" scope="row">3</td>
+				<td class="evennum">Алёна</td>
+				<td class="evennum">Nissan</td>
+				<td class="evennum">180</td>
+			</tr>
+			<tr>
+				<td class="oddnum" scope="row">4</td>
+				<td class="oddnum">Мария</td>
+				<td class="oddnum">Mazda</td>
+				<td class="oddnum">150</td>
+			</tr>
+			<tr>
+				<td class="evennum" scope="row">5</td>
+				<td class="evennum">Ольга</td>
+				<td class="evennum">Chevrolet</td>
+				<td class="evennum">160</td>
+			</tr>
+			<tr>
+				<td class="oddnum" colspan="3">Средняя мощность</td>
+				<td class="oddnum">180 л/с</td>
+				</tr></tbody>
+		</table>
+		<form id="questionnaire">
+		<div class="form-group row">
+            <label class="col-1 col-form-label">
+                ФИО:</label>
+				<div class="col-sm-4 col-md-11">
+                <input name="field-name-1" value="Введите ФИО"/></div></div>
+				<div class="form-group row">
+				<label class="col-1 col-form-label">
+                Email:</label>
+				<div class="col-sm-4 col-md-11">
+                <input name="field-email" value="example@example.com" type="email"/></div></div>
+				<div class="form-group row">
+				<label class="col-1 col-form-label">
+                Дата рождения:</label>
+				<div class="col-xs-1 col-md-3">
+                <input name="field-date" value="1990-01-01" type="date"/> </div></div>
+				<label> Пол:</label>
+				<div class="form-check">
+                <input type="radio" checked="checked" name="field-gender" value="Male"/>
+				<label class="form-check-label">Мужской</label></div>
+				<div class="form-check">
+                <input type="radio" checked="checked" name="field-gender" value="Female"/>
+				<label class="form-check-label">Женский</label></div>
+				<div class="form-check">
+                <input type="radio" checked="checked" name="field-gender" value="not selected"/>
+				<label class="form-check-label">Не выбрано</label></div>
+				<label>Количество конечностей:</label>
+				<div class="form-check">
+                <input type="radio" checked="checked" name="armsandlegs" value="4"/>
+                <label class="form-check-label">4</label></div>
+				<div class="form-check">
+                <input type="radio" checked="checked" name="armsandlegs" value="3"/>
+                <label class="form-check-label">3</label></div>
+				<div class="form-check">
+                <input type="radio" checked="checked" name="armsandlegs" value="2"/>
+                <label class="form-check-label">2</label> </div>
+				<div class="form-check">
+                <input type="radio" checked="checked" name="armsandlegs" value="1"/>
+                <label class="form-check-label">1</label></div>
+				<div class="form-group row">
+				<label class="col-2 col-form-label">
+                Сверхспособности:</label>
+				<div class="col-xs-2 col-md-3">
+                <select name="superpower" multiple="multiple">
+                    <option value="immortal" selected="selected">Бессмертие</option>
+                    <option value="walls">Прохождение сквозь стены</option>
+                    <option value="levitation">Левитация</option>
+                </select></div></div>
+				<div class="form-group">
+				<label> Биография</label>
+                <textarea name="about">Расскажите о себе</textarea></div>
+				<div class="form-check">
+                <label class="form-check-label">С контрактом ознакомлен(а)</label>
+                <input type="checkbox" checked="checked" name="check-1"/></div>
+				<br><input type="submit" value="Отправить" />
+        </form></main></div>
+		<footer class="p-2 mt-4" id="basement">
+		<div class="container-fluid">
+			<class="align-middle">Ткачёв Данил 27/2</span></div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+</html>
